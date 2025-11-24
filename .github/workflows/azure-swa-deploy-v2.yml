@@ -67,7 +67,7 @@ jobs:
           fi
 
       - name: 📥 Checkout
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
         with:
           ref: ${{ steps.set_ref.outputs.ref }}
           submodules: true

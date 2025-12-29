@@ -62,7 +62,7 @@ jobs:
         run: pnpm install --frozen-lockfile
 
       - name: 📥 Download build artifacts from CI
-        uses: dawidd6/action-download-artifact@v11
+        uses: dawidd6/action-download-artifact@v12
         continue-on-error: true
         with:
           workflow: ci.yml
@@ -74,7 +74,7 @@ jobs:
           if_no_artifact_found: warn
 
       - name: 📥 Download azure-swa-build artifact from CI
-        uses: dawidd6/action-download-artifact@v11
+        uses: dawidd6/action-download-artifact@v12
         continue-on-error: true
         with:
           workflow: ci.yml

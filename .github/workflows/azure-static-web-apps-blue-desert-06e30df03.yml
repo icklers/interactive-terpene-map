@@ -52,7 +52,7 @@ jobs:
 
       - name: 📥 Download build artifacts (workflow_run)
         if: github.event_name == 'workflow_run'
-        uses: dawidd6/action-download-artifact@v11
+        uses: dawidd6/action-download-artifact@v12
         with:
           workflow: ci.yml
           name: azure-swa-build
@@ -62,7 +62,7 @@ jobs:
 
       - name: 📥 Download build artifacts (pull_request via workflow_call)
         if: github.event_name == 'pull_request'
-        uses: dawidd6/action-download-artifact@v11
+        uses: dawidd6/action-download-artifact@v12
         with:
           workflow: ci.yml
           name: azure-swa-build
